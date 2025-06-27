@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato - Bruno Daniel</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Sobre Mim</a></li>
+          <li><a href="formacao.html">Formação</a></li>
+          <li><a href="portfolio.html">Portfólio</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Fale comigo</h1>
+      <form
+        action="https://formsubmit.co/brunoseleghin@gmail.com"
+        method="POST"
+      >
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" required />
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" required />
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea name="mensagem" rows="5" required></textarea>
+
+        <!-- Proteções contra spam -->
+        <input type="hidden" name="_captcha" value="false" />
+        <input
+          type="hidden"
+          name="_subject"
+          value="Nova mensagem do seu portfólio"
+        />
+        <input
+          type="hidden"
+          name="_next"
+          value="http://127.0.0.1:5500/obrigado.html"
+        />
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 - Bruno Daniel Seleghin Gilla</p>
+    </footer>
+  </body>
+</html>
